@@ -28,7 +28,7 @@ load_dotenv()
 # Loading api calls
 search = GoogleSearchAPIWrapper()
 
-openai.api_key = st.secrets["openai.api_key"]
+openai.api_key = st.secrets["openai_api_key"]
 GOOGLE_CSE_ID = st.secrets["GOOGLE_CSE_ID"]
 GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
