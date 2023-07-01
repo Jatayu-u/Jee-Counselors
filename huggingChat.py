@@ -26,11 +26,13 @@ import re
 # load_dotenv()
 
 # Loading api calls
-search = GoogleSearchAPIWrapper()
+
 
 OPENAI_API_KEY = st.secrets["openai"]
 GOOGLE_CSE_ID = st.secrets["google_cse"]
 GOOGLE_API_KEY = st.secrets["google_api"]
+
+search = GoogleSearchAPIWrapper()
 
 st.set_page_config(page_title="OpenAssistant Powered Chat App")
 
