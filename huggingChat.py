@@ -28,9 +28,9 @@ load_dotenv()
 # Loading api calls
 search = GoogleSearchAPIWrapper()
 
-openai.api_key = st.secrets["openai_api_key"]
-GOOGLE_CSE_ID = st.secrets["GOOGLE_CSE_ID"]
-GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+openai.api_key = st.secrets["openai"]
+GOOGLE_CSE_ID = st.secrets["google_cse"]
+GOOGLE_API_KEY = st.secrets["google_api"]
 
 st.set_page_config(page_title="OpenAssistant Powered Chat App")
 
