@@ -28,7 +28,7 @@ import re
 # Loading api calls
 search = GoogleSearchAPIWrapper()
 
-openai.api_key = st.secrets["openai"]
+OPENAI_API_KEY = st.secrets["openai"]
 GOOGLE_CSE_ID = st.secrets["google_cse"]
 GOOGLE_API_KEY = st.secrets["google_api"]
 
