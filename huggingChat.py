@@ -29,8 +29,8 @@ import re
 
 
 openai.api_key = st.write("openai", st.secrets["openai"])
-google_cse_id = st.write("gcse", st.secrets["gcse"])
-google_api_key = st.write("gapi", st.secrets["gapi"])
+google_cse_id = st.write("gcse", st.secrets["g"]["gcse"])
+google_api_key = st.write("gapi", st.secrets["g"]["gapi"])
 
 search = GoogleSearchAPIWrapper()
 
