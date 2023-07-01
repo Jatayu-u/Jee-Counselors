@@ -4,6 +4,8 @@ from streamlit_extras.colored_header import colored_header
 from streamlit_extras.add_vertical_space import add_vertical_space
 from langchain import PromptTemplate, HuggingFaceHub, LLMChain
 from dotenv import load_dotenv
+# Importing openai
+import openai
 
 # IMPORTING THE LIBRARIES FOR LANGCHAIN AGENT
 from langchain.agents import load_tools
@@ -26,6 +28,7 @@ load_dotenv()
 # Loading api calls
 search = GoogleSearchAPIWrapper()
 
+openai.api_key = st.secrets["openai.api_key"]
 
 
 st.set_page_config(page_title="OpenAssistant Powered Chat App")
