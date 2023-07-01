@@ -97,7 +97,7 @@ Remember to look into all the available resources before answering any query. By
 
 
         You have the access of the following tools:
-        {tools}
+                 {tools}
  
 
         Use the following format:
@@ -200,10 +200,12 @@ Remember to look into all the available resources before answering any query. By
         llm_chain=llm_chain,
         output_parser=output_parser,
         stop=["\nObservation:"],
-        allowed_tools=tool_names
+        allowed_tools=tool_names,
+                
+        
 )
         # EXECUTING THE AGENT
-        agent_executor = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools, verbose=True,memory = st.session_state.memory)
+        agent_executor = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools, verbose=True,memory = memory)
         
         return agent_executor
     
