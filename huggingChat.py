@@ -23,7 +23,7 @@ from langchain.schema import AgentAction, AgentFinish, OutputParserException
 import re
 
 # load the Environment Variables. 
-load_dotenv()
+# load_dotenv()
 
 # Loading api calls
 search = GoogleSearchAPIWrapper()
