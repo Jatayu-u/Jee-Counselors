@@ -28,9 +28,8 @@ load_dotenv()
 # Loading api calls
 
 
-# openai.api_key = st.secrets["openai"]
-# google_cse_id = st.secrets["g"]["gcse"]
-# google_api_key = st.secrets["g"]["gapi"]
+openai.api_key = st.secrets["openai"]
+
 
 search = GoogleSearchAPIWrapper()
 
