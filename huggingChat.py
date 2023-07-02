@@ -33,7 +33,7 @@ google_api_key = st.secrets["g"]["gapi"]
 
 
 # load the Environment Variables. 
-# load_dotenv()
+load_dotenv()
 
 search = GoogleSearchAPIWrapper()
 
