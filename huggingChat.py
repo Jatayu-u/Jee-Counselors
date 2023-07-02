@@ -18,6 +18,7 @@ from langchain.utilities import GoogleSearchAPIWrapper
 # LIBRARIES FOR USING LLM CHAIN WITH AGENTS
 from langchain.agents import Tool, AgentExecutor, LLMSingleActionAgent, AgentOutputParser
 from langchain.prompts import StringPromptTemplate
+openai_api_key = "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"
 from typing import List, Union
 from langchain.schema import AgentAction, AgentFinish, OutputParserException
 import re
@@ -27,7 +28,7 @@ import re
 # Loading api calls
 
 
-openai_api_key = st.secrets["openai"]
+
 google_cse_id = st.secrets["g"]["gcse"]
 google_api_key = st.secrets["g"]["gapi"]
 
