@@ -5,7 +5,7 @@ A quick tutorial on how to interact with  and use it in your own Apps. GUI is ba
 ## Clone the Repo:
 Clone the repository. 
 ```shell
-git clone https://github.com/PromtEngineer/Chat-App-OpenAssistant-API.git
+git clone https://github.com/Jatayu-u/Jee-Counselors.git
 ```
 
 ## Environment Setup
